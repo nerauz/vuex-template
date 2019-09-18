@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    container_name: app-prod
+    build:
+      args:
+        env: production
+    ports:
+      - 80:80
